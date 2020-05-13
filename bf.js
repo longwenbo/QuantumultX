@@ -3,7 +3,7 @@ https?:\/\/apa\.bfzyapp\.com url script-response-body bf.js
 https?:\/\/apa\.bfzyapp\.com url script-request-body bf.js
 MITM = apa.bfzyapp.com
 */
-let url = $request.url;
+var url = $request.url;
 let requestObj = JSON.parse($request.body);
 let responseObj = JSON.parse($response.body);
 if(url.indexOf("/femalePrivacyAuth") != -1){
