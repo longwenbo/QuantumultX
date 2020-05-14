@@ -22,5 +22,5 @@ if(url.indexOf("/sendVoiceRequest") != -1){
   responseObj.data.coin=9999;
   responseObj.data.allowStatus=1;
 }
-console.log(responseObj);
+$nobyda.notify(responseObj);
 $done({body:JSON.stringify(responseObj)});
