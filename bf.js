@@ -15,8 +15,8 @@ if(url.indexOf("/viewUser") != -1){
   responseObj.type = 1;
 }
 if(url.indexOf("/sendVoiceRequest") != -1){
-  responseObj.price=0;
+  responseObj.data.price=0;
   responseObj.coin=9999;
-  responseObj.allowStatus=1;
+  responseObj.data.allowStatus=1;
 }
 $done({body:JSON.stringify(responseObj)});
