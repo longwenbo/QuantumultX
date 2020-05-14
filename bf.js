@@ -12,7 +12,7 @@ if(url.indexOf("/femalePrivacyAuth") != -1){
 //   $done({body:JSON.stringify(requestObj)});
 }
 if(url.indexOf("/viewUser") != -1){
-  responseObj.type = 1;
+  responseObj.type = 2;
 }
 if(url.indexOf("/sendVoiceRequest") != -1){
   responseObj.data.price=0;
