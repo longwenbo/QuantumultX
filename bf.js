@@ -9,7 +9,7 @@ var responseObj = JSON.parse($response.body);
 if(url.indexOf("/femalePrivacyAuth") != -1){
   requestObj.dta.type = "3";
   responseObj.showPrivateAuthStatus = 3;
-  $done({body:JSON.stringify(requestObj)});
+//   $done({body:JSON.stringify(requestObj)});
 }
 if(url.indexOf("/viewUser") != -1){
   responseObj.data.type = 2;
