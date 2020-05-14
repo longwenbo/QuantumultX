@@ -5,7 +5,7 @@ MITM = apa.bfzyapp.com
 */
 var url = $request.url;
 // let requestObj = JSON.parse($request.body);
-let responseObj = JSON.parse($response.body);
+var responseObj = JSON.parse($response.body);
 if(url.indexOf("/femalePrivacyAuth") != -1){
 //   requestObj.type = "3";
   responseObj.showPrivateAuthStatus = 3;
